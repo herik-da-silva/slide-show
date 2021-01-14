@@ -11,6 +11,7 @@ header {
     display: flex;
     flex-direction: column;
     height: 100vh; /*Se ajusata ao tamanho da tela*/ 
+    background-color: #cccccc;
 }
 
 .header {
@@ -34,6 +35,12 @@ header {
     height: inherit; /*Erda a altura da classe acima*/
     background-position: center; /*Imagem centralizada*/
     background-size: cover; /*Idependente do monitor imagem diminui e aumenta*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 0px 1px 1px #333333;
+    font-size: 50px;
 }
 
 .botoes {
