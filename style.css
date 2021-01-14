@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /*Se ajusata ao tamanho da tela*/ 
+}
+
+.header {
+    height: 50px;
+    background-color: tomato;
+}
+
+.slider {
+    flex: 1;
+    overflow: hidden; /*Tudo que passar do tamanho da tela será cortado*/
+}
+
+.slider-largura {
+    height: 100%;
+    display: flex; /*uma imagem ao lado da outra*/
+    transition: all ease 0.3s; /*Efeito de transferencia de slide*/
+}
+
+.slider-item {
+    width: 100vw;
+    height: inherit; /*Erda a altura da classe acima*/
+    background-position: center; /*Imagem centralizada*/
+    background-size: cover; /*Idependente do monitor imagem diminui e aumenta*/
+}
+
+.botoes {
+    position: absolute; /*Botoes acima do slide*/
+    z-index: 99; /*Acima da foto*/
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /*cada botão de um lado*/
+    align-items: center; /*No meio da altura da foto*/
+}
+
+.botao {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%; /*Item redondo*/
+    overflow: hidden; /*Não dar problema com o texto*/
+    cursor: pointer; /*Mouse no botão*/
+}
